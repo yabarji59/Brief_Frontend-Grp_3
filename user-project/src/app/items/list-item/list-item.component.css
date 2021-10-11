@@ -1,0 +1,45 @@
+html {background-color: pink; font-family: 'Open Sans';}
+
+ul {
+    list-style-type: none;
+}
+
+
+#user-item {
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+    grid-gap: 2%;
+    align-items: center;
+}
+
+
+.grid-start {
+    grid-column: col-start / span 1;       
+    grid-row: 1/1;
+    padding-left: 2%;
+}
+
+.grid-center {
+    grid-column: colstart 3 / span 4;
+    
+}
+
+.grid-end {
+    grid-column: colstart 7 / span 1;
+    grid-row: 1/1;
+    height: 50px;
+
+}
+
+.thumbnail {
+    border-radius: 50%;
+}
+
+.primary-info{
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
