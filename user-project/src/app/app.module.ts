@@ -7,6 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListComponent } from './pages/list/list.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { ListItemComponent } from './items/list-item/list-item.component';
+import { RouterModule, Routes } from '@angular/router';
+//TODO : clean for production and put routes in appropriate component class
+const appRoutes:Routes = [
+  { path: 'list',component: ListItemComponent}
+]
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +25,8 @@ import { ListItemComponent } from './items/list-item/list-item.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes, {enableTracing:true})
   ],
   providers: [],
   bootstrap: [AppComponent]
