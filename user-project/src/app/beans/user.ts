@@ -14,7 +14,7 @@ export interface User {
         state:string,
         country:string,
         postcode:number,
-        coodrinates:{
+        coordinates:{
             latitude:number,
             longitude:number
         },

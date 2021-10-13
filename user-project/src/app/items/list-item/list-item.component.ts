@@ -1,7 +1,5 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import { inject } from '@angular/core/testing';
 import { User } from 'src/app/beans/user';
-import { DetailComponent } from 'src/app/pages/detail/detail.component';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -10,17 +8,19 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./list-item.component.css']
 })
 export class ListItemComponent implements OnInit { 
-  userAgeIcon:string;
+  userAgeIcon!:string;
+  userSrv: UserService; 
 
   constructor(userService : UserService) {
+      this.userSrv=userService;
      }
 
   ngOnInit():void {
-     //TODO : initialize variables with loadDetail.
-    
+         //TODO : waiting for JSON parse. 
     }
-
-  clickOnItem(id:number){
+    
+  clickOnItem(usr:User){
+    this.userSrv.loadDetailPage(usr);
   }
 
   // Determines which icon to display depending on the user's Age.
