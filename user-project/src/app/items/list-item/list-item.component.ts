@@ -1,40 +1,26 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { inject } from '@angular/core/testing';
+import { User } from 'src/app/beans/user';
 import { DetailComponent } from 'src/app/pages/detail/detail.component';
-import { DetailLoaderService } from 'src/app/services/detail-loader.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-list-item',
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.css']
 })
-export class ListItemComponent implements OnInit {
-  idUser:number;
-  userName:string;
-  userFirstName:string;
-  userEmail:string;
-  userProfilePicture:string;
-  userAgeIcon!:string;
+export class ListItemComponent implements OnInit { 
+  userAgeIcon:string;
 
-  constructor(idUser:number,
-    userName:string,
-    userFirstName:string,
-    userEmail:string,
-    userProfilePicture:string,
-    userAge:number, private loadDetail : DetailLoaderService) {
-       this.idUser=idUser;
-       this.userName=userName;
-       this.userFirstName=userFirstName;
-       this.userEmail=userEmail;
-       this.userProfilePicture=userProfilePicture;
-       this.setAgeIcon(userAge);
+  constructor(userService : UserService) {
      }
 
   ngOnInit():void {
+     //TODO : initialize variables with loadDetail.
+    
     }
 
   clickOnItem(id:number){
-    this.loadDetail.loadDetail(id);
   }
 
   // Determines which icon to display depending on the user's Age.

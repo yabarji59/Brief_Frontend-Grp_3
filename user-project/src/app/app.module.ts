@@ -8,12 +8,6 @@ import { ListComponent } from './pages/list/list.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { ListItemComponent } from './items/list-item/list-item.component';
 import { RouterModule, Routes } from '@angular/router';
-//TODO : clean for production and put routes in appropriate component class
-const appRoutes:Routes = [
-  { path: 'list',component: ListItemComponent}
-]
-
-
 
 @NgModule({
   declarations: [
@@ -25,8 +19,7 @@ const appRoutes:Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes, {enableTracing:true})
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
