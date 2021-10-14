@@ -9,7 +9,7 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-  public user!: User;
+  user!: User;
 
   constructor(private route: ActivatedRoute, private userService:UserService) {
    }

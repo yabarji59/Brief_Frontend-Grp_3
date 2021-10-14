@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, Input, OnInit } from '@angular/core';
 import { User } from 'src/app/beans/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -8,6 +8,7 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./list-item.component.css']
 })
 export class ListItemComponent implements OnInit { 
+  @Input() user?:User;
   userAgeIcon!:string;
   userSrv: UserService; 
 
