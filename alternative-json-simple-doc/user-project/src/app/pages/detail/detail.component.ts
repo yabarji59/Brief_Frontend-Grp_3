@@ -26,8 +26,8 @@ export class DetailComponent implements OnInit {
    }
 
   ngOnInit(){
+    //thanks to the uuid we load the user from the json
      this.user = this.service.getUserById(this.uuid);
-     console.log(this.user);
     }    
   }
 

@@ -15,7 +15,7 @@
                 <h6>Adresse :</h6>
                 <ul class="address">
                     <li>{{user.location.street.number}} {{user.location.street.name}}</li>
-                    <li>{{user.location.postcode}} {{user.location.city}}</li>
+                    <li>{{user.location.postcode}} {{user.location.city | uppercase }}</li>
                     <li>{{user.location.state}}, {{user.location.country}}</li>
                     <li>
                         <h6>Lat:</h6> {{user.location.coordinates.latitude}},
@@ -41,7 +41,7 @@
                         <h6>Date of birth :</h6> {{user.dob.date | date}}
                     </li>
                     <li>
-                        <h6>Age :</h6>{{user.dob.age}}
+                        <h6>Age : </h6>{{user.dob.age}}
                     </li>
                 </ul>
             </li>

@@ -1,4 +1,6 @@
-//this interface represents a User object. We parse the JSON in it.
+/**
+ * /this interface represents a User object. We parse the JSON in it.
+ */
 export interface User {
     gender:string;
     name: {
