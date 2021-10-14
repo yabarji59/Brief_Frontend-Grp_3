@@ -8,7 +8,7 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./list-item.component.css']
 })
 export class ListItemComponent implements OnInit { 
-  @Input() user?:User;
+ // @Input() user?:User;
   userAgeIcon!:string;
   userSrv: UserService; 
 
