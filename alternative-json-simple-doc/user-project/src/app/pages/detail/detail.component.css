@@ -1,0 +1,43 @@
+#detail {
+    margin: 30px 30px 30px 30px;
+    border-radius: 20px;
+    background-color: white;
+    padding:30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fields{
+    margin-bottom: 5px;
+    
+    margin-top: 25px;
+}
+
+.mail {
+    text-align: center;
+}
+
+.profile-pic {
+    margin: 10px;
+    text-align: center;
+}
+.profile-pic img {
+    border-radius: 50%;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100%;
+}
+
+h6 {
+    display: inline;
+    font-size: medium;
+    font-weight: bold;
+    color: palevioletred;
+}

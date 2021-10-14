@@ -1,0 +1,15 @@
+<div id="user-item" (click)="clickOnItem(user.login.uuid)">    
+    <div class="grid-start">
+        <img src= {{user.picture.thumbnail}} alt="profile picture thumbnail" class="thumbnail"/>
+    </div>
+    <ul class="grid-center">
+        <li class="primary-info">{{ user.name.first }}</li>
+        <li class="primary-info"> {{ user.name.last }}</li>
+        <li class="secondary-info">{{ user.email}}</li>
+    </ul>
+    <div class="grid-end">
+        <img src={{userAgeIcon}} class="age-icon">
+    </div>
+</div>
+
+    
