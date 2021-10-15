@@ -10,16 +10,18 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class DetailComponent implements OnInit {
   user!: User;
+  uuid:string;
 
   constructor(
     private route: ActivatedRoute,
     private userService: UserService
-  ) {}
+  ) {
+      //here we load the uuid from the route params
+      this.uuid = <string>this.route.snapshot.paramMap.get('uuid');
+  }
 
-  ngOnInit() {
-    let userAsJson = this.route.snapshot.paramMap.get('id');
-    if (userAsJson != null) {
-      this.user = this.userService.getById(userAsJson);
-    }
+  ngOnInit() {   
+      this.user = <User>this.userService.getById(this.uuid);
+      console.log(this.user);   
   }
 }

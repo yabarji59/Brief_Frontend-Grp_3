@@ -13,13 +13,17 @@ export class UserService {
   constructor(private router: Router, private http: HttpClient) {}
 
   getAll(): Observable<User[]> {
-    return this.http.get<User[]>(this._url);
+    let users = this.http.get<User[]>(this._url);
+    return users;
   }
-  /*this.userService.getAll().subscribe((data) => (this.listuser = data));*/
-
+ 
   getById(id: string): User {
+    console.log("get by id "+id);
+    let oList: Observable<User[]> = this.getAll();
     let list: User[] = [];
-    this.getAll().subscribe((data) => (list = data));
+    console.log("O LIST="+oList);
+    oList.subscribe(data => list = data as User[]);
+    console.log("user list="+list);
     let user!: User;
     for (let u of list) {
       if (u.login.uuid == id) {
@@ -27,14 +31,11 @@ export class UserService {
       }
     }
     return user;
-  }
-
-  populateItem(user: User): User {
-    return user;
-  }
+  } 
 
   //this method loads the detail page after the user clicked on an item of the list
   loadDetailPage(id: string) {
+    console.log("route loaded");
     this.router.navigate(['/detail', id]);
   }
 }
