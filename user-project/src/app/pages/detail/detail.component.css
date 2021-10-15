@@ -1,0 +1,30 @@
+#back {
+    display: block;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    background-color: black;
+    color:white;
+}
+
+#back:hover {
+    background-color: blueviolet;
+}
+
+#back:active {
+    background-color: darkmagenta;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: pink;
+}
