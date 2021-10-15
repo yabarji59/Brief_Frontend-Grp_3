@@ -1,10 +1,6 @@
-import { UserModel } from './user.model';
+import { UserService } from 'src/app/services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/beans/user';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-list',
@@ -12,15 +8,15 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-  public url = 'http://localhost:3000/posts';
-  public users = [];
-  private api = ApiService;
+  public listuser: User[] = [];
+  userAgeIcon!: string;
+  userSrv: UserService;
 
-  constructor(private httpClient: HttpClient, private apiService: ApiService) {}
+  constructor(private userService: UserService) {
+    this.userSrv = userService;
+  }
 
-  ngOnInit(): void {}
-
-  getAll() {}
-
-  getUserById(id: number) {}
+  ngOnInit(): void {
+    this.userService.getAll().subscribe((data) => (this.listuser = data));
+  }
 }

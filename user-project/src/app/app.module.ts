@@ -11,7 +11,14 @@ import { NavbarComponent } from './Shared/navbar/navbar.component';
 import { HeaderComponent } from './Shared/header/header.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Routes, RouterModule } from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: '', component: ListComponent },
+  { path: '**', redirectTo: 'users' },
+  { path: 'users', component: ListComponent },
+  { path: 'detail/:id', component: DetailComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent],

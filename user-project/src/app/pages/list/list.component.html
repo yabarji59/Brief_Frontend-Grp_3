@@ -1,5 +1,5 @@
-<div class="container">
-  <div class="row">
-    <app-list-item></app-list-item>
-  </div>
+<div>
+  <h1>Listes des Collaborateurs</h1>
+
+  <app-list-item *ngFor="let user of listuser" [user]="user"></app-list-item>
 </div>

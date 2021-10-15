@@ -8,19 +8,19 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./list-item.component.css'],
 })
 export class ListItemComponent implements OnInit {
-  /* @Input() user?:User;*/
+  @Input() user!: User;
   userAgeIcon!: string;
   userSrv: UserService;
 
-  constructor(userService: UserService) {
+  constructor(private userService: UserService) {
     this.userSrv = userService;
   }
 
   ngOnInit(): void {
-    //TODO : waiting for JSON parse.
+    this.setAgeIcon(this.user.dob.age);
   }
 
-  clickOnItem(usr: User) {
+  clickOnItem(usr: string) {
     this.userSrv.loadDetailPage(usr);
   }
 

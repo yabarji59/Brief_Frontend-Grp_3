@@ -1,35 +1,40 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { User } from '../beans/user';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  
-  constructor(private router:Router) { }
+  private _url: string = './assets/data/user.json';
 
-    
-  getUsersFromJson():User[]{
-     //TODO : Mireille
-     // Replace this code with accurate code. 
-    let users:User[]=[]
-     return users;
+  constructor(private router: Router, private http: HttpClient) {}
+
+  getAll(): Observable<User[]> {
+    return this.http.get<User[]>(this._url);
   }
- 
-  populateItem(user:User):User{
+  /*this.userService.getAll().subscribe((data) => (this.listuser = data));*/
+
+  getById(id: string): User {
+    let list: User[] = [];
+    this.getAll().subscribe((data) => (list = data));
+    let user!: User;
+    for (let u of list) {
+      if (u.login.uuid == id) {
+        user = u;
+      }
+    }
     return user;
   }
 
- //this method loads the detail page after the user clicked on an item of the list
-  loadDetailPage(user:User){    
-    this.router.navigate(['/detail', {user:JSON.stringify(user)}]);      
+  populateItem(user: User): User {
+    return user;
   }
-  
-  //Get user object from a json 
-  parseUserFromRoute(json:string) : User{
-    let user: User =  JSON.parse(json);
-    return user;    
+
+  //this method loads the detail page after the user clicked on an item of the list
+  loadDetailPage(id: string) {
+    this.router.navigate(['/detail', id]);
   }
 }
-
