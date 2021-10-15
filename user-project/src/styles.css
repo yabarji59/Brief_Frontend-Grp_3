@@ -8,3 +8,11 @@ body {
      font-family: 'Open Sans', sans-serif;
      background-color: pink;
      }
+     h1 {
+          font-size: xx-large;
+          color: white;
+          text-transform: uppercase;
+          margin-left: auto;
+          font-weight: bolder;
+          text-align: center;
+      }

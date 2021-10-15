@@ -19,11 +19,9 @@ export class UserService {
  
   getById(id: string): User {
     console.log("get by id "+id);
-    let oList: Observable<User[]> = this.getAll();
+    
     let list: User[] = [];
-    console.log("O LIST="+oList);
-    oList.subscribe(data => list = data as User[]);
-    console.log("user list="+list);
+    //TODO :populate the list with the data from getAll()
     let user!: User;
     for (let u of list) {
       if (u.login.uuid == id) {
