@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "gender": "female",
+    "name": {
+      "title": "Ms",
+      "first": "Katie",
+      "last": "Peters"
+    },
+    "location": {
+      "street": {
+        "number": 5660,
+        "name": "Herbert Road"
+      },
+      "city": "Kilcoole",
+      "state": "Cork City",
+      "country": "Ireland",
+      "postcode": 47324,
+      "coordinates": {
+        "latitude": "24.9168",
+        "longitude": "58.7910"
+      },
+      "timezone": {
+        "offset": "+9:00",
+        "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+      }
+    },
+    "email": "katie.peters@example.com",
+    "login": {
+      "uuid": "8bae9472-6cf4-4e3e-bb12-8a66f5bdf992",
+      "username": "blackleopard670",
+      "password": "acid",
+      "salt": "W8s4n67S",
+      "md5": "b7a80991e567b2c5b6a50b7eaf6d1a38",
+      "sha1": "12a5641c06aaada5e71b75ada2c9da59fb6292e5",
+      "sha256": "73a20eb94f1fb01e2dfa8e0f1930ed2cd42b44cdbefd685deddbc524cff15c3a"
+    },
+    "dob": {
+      "date": "1965-05-15T10:28:06.432Z",
+      "age": 56
+    },
+    "registered": {
+      "date": "2009-08-17T20:40:43.629Z",
+      "age": 12
+    },
+    "phone": "031-789-6618",
+    "cell": "081-736-3868",
+    "id": {
+      "name": "PPS",
+      "value": "7707923T"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/93.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/93.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/93.jpg"
+    },
+    "nat": "IE"
+  },
+  {
+    "id": 2,
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Philip",
+      "last": "Knight"
+    },
+    "location": {
+      "street": {
+        "number": 2192,
+        "name": "Frederick Ave"
+      },
+      "city": "St. George",
+      "state": "Prince Edward Island",
+      "country": "Canada",
+      "postcode": "Y1L 3L2",
+      "coordinates": {
+        "latitude": "58.5991",
+        "longitude": "75.9067"
+      },
+      "timezone": {
+        "offset": "-6:00",
+        "description": "Central Time (US & Canada), Mexico City"
+      }
+    },
+    "email": "philip.knight@example.com",
+    "login": {
+      "uuid": "5a5daecb-0be4-4426-8733-7dbb44adb1ab",
+      "username": "crazybear842",
+      "password": "mental",
+      "salt": "rpP3TfPU",
+      "md5": "d4efc7437a8fbe74499c73a140b96c6e",
+      "sha1": "16dd5a7e9584e7077769a6c4b2ce8a5bea7a2bc1",
+      "sha256": "2bec6580b006798e850a69450ea5e4b86429f50b8846eb727b90a06ea6f45291"
+    },
+    "dob": {
+      "date": "1976-12-15T10:46:16.448Z",
+      "age": 45
+    },
+    "registered": {
+      "date": "2005-12-06T16:35:25.147Z",
+      "age": 16
+    },
+    "phone": "337-675-9633",
+    "cell": "184-719-9688",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/95.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/95.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/95.jpg"
+    },
+    "nat": "CA"
+  },
+  {
+    "id": 3,
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Jordan",
+      "last": "Hall"
+    },
+    "location": {
+      "street": {
+        "number": 2395,
+        "name": "Trafalgar Street"
+      },
+      "city": "Greymouth",
+      "state": "Canterbury",
+      "country": "New Zealand",
+      "postcode": 63809,
+      "coordinates": {
+        "latitude": "17.0818",
+        "longitude": "-71.3034"
+      },
+      "timezone": {
+        "offset": "+5:00",
+        "description": "Ekaterinburg, Islamabad, Karachi, Tashkent"
+      }
+    },
+    "email": "jordan.hall@example.com",
+    "login": {
+      "uuid": "0d93f65b-ac9f-4a54-ad6b-2ffbede17573",
+      "username": "heavygoose651",
+      "password": "love",
+      "salt": "AWg2JZ2C",
+      "md5": "ca791a935221c72549ff64ac8c90e55a",
+      "sha1": "fd625002b407d7171418db3068b515d7c83eea6a",
+      "sha256": "3992f413be0bd4b3d69e2f6659c0294388f7473816538b3692a3644a7c27942b"
+    },
+    "dob": {
+      "date": "1970-11-18T10:09:11.288Z",
+      "age": 51
+    },
+    "registered": {
+      "date": "2017-11-23T13:10:54.678Z",
+      "age": 4
+    },
+    "phone": "(941)-259-3125",
+    "cell": "(292)-814-0990",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/3.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/3.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/3.jpg"
+    },
+    "nat": "NZ"
+  },
+  {
+    "id": 4,
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Samuel",
+      "last": "Luoma"
+    },
+    "location": {
+      "street": {
+        "number": 8211,
+        "name": "Pispalan Valtatie"
+      },
+      "city": "Jakobstad",
+      "state": "Uusimaa",
+      "country": "Finland",
+      "postcode": 49150,
+      "coordinates": {
+        "latitude": "66.7332",
+        "longitude": "-112.9721"
+      },
+      "timezone": {
+        "offset": "+5:30",
+        "description": "Bombay, Calcutta, Madras, New Delhi"
+      }
+    },
+    "email": "samuel.luoma@example.com",
+    "login": {
+      "uuid": "93a3e329-6c1d-49dd-b875-97e0f7238f51",
+      "username": "whitefish650",
+      "password": "mustard",
+      "salt": "B8zZNRvS",
+      "md5": "88cb679742e85aa84406244886210f48",
+      "sha1": "9a8402183734a11f9394115ed5453356c1af48af",
+      "sha256": "b38ed42cb621b49c32cec2e3e73bb8a17822390f44af5fc24aed98c83e0d7943"
+    },
+    "dob": {
+      "date": "1991-05-16T04:22:27.547Z",
+      "age": 30
+    },
+    "registered": {
+      "date": "2005-10-30T04:37:04.693Z",
+      "age": 16
+    },
+    "phone": "02-069-165",
+    "cell": "047-073-80-34",
+    "id": {
+      "name": "HETU",
+      "value": "NaNNA677undefined"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/29.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/29.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/29.jpg"
+    },
+    "nat": "FI"
+  },
+  {
+    "id": 5,
+    "gender": "female",
+    "name": {
+      "title": "Mrs",
+      "first": "Venla",
+      "last": "Salminen"
+    },
+    "location": {
+      "street": {
+        "number": 9985,
+        "name": "Siilitie"
+      },
+      "city": "Kannus",
+      "state": "Satakunta",
+      "country": "Finland",
+      "postcode": 44598,
+      "coordinates": {
+        "latitude": "-41.7409",
+        "longitude": "12.4976"
+      },
+      "timezone": {
+        "offset": "-1:00",
+        "description": "Azores, Cape Verde Islands"
+      }
+    },
+    "email": "venla.salminen@example.com",
+    "login": {
+      "uuid": "3e4d270f-f074-4d8b-992f-67f6dab5baf4",
+      "username": "bluegorilla469",
+      "password": "keenan",
+      "salt": "sJtJAymg",
+      "md5": "5067771b1e95b43a6c02d56a30d36232",
+      "sha1": "8554b9f17799be7bbfdcf5ca4de8c56541e2f341",
+      "sha256": "66536f31a91fe8a4dc930216affdd57290a66c00681967309b7cd09632df83b2"
+    },
+    "dob": {
+      "date": "1960-07-08T01:07:52.844Z",
+      "age": 61
+    },
+    "registered": {
+      "date": "2003-11-24T05:56:43.871Z",
+      "age": 18
+    },
+    "phone": "09-719-231",
+    "cell": "047-559-60-52",
+    "id": {
+      "name": "HETU",
+      "value": "NaNNA210undefined"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/96.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/96.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/96.jpg"
+    },
+    "nat": "FI"
+  }
+]
